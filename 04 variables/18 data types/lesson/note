@@ -1,0 +1,7 @@
+#types
+text : str
+numeric : int, float
+list : list, tuple, range
+elationship: dict
+cluster: set
+Boolean: bool

@@ -1,0 +1,14 @@
+immutable: some types remain as assigned. that is, a part cannot be changed within a part (immutable)
+
+mutable: some types you can change a part (mutable)
+
+int: integer -> immutable
+float: float -> immutable
+bool: boolean -> immutable
+str: string -> immutable
+int: integer -> immutable
+
+list: list -> mutable
+tuple: tuple -> immutable
+dict: dictionary -> mutable
+set: set -> mutable

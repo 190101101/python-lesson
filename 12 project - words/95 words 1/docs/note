@@ -1,0 +1,9 @@
+open(file, mode)
+	r: read(default)
+	a: append
+	w: write
+	x: create
+
+spec character
+	\n: new line
+	\r: carriage return
