@@ -1,0 +1,7 @@
+python modulleri 3 shekilde axtarar
+
+1 - kodun calishdigiyerde (eyni seviyye)
+2 - pythonpath enviroment variable
+3 - python qurulu oldugu yerde (virtual envlerde)
+
+sys.path -> axtarma folderleri gosterir

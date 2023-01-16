@@ -1,0 +1,16 @@
+paketler:
+* kodu organize ederler
+* dashinabilirler
+* modulleri birleshdirirler
+
+paket altindakilar
+
+* pak.mod1
+* pak.mod1.mod2
+
+paket yaradmaq
+
+__init__.py -> icinde alt 		
+	* paketler ve moduller ucun importlar
+	* global variables
+	* documentations
