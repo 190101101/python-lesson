@@ -50,11 +50,11 @@ while True:
 
 	elif robot_choice.get("win") == player_choice.get("lose"):
 		game_score["robot"] = game_score["robot"] + 1
-		print(f"bot win: {p1[robot]} > {p1[player]}")
+		print(f"you lose: {p1[player]} < {p1[robot]}")
 
 	elif robot_choice.get("draw") == player_choice.get("draw"):
 		game_score["draw"] = game_score["draw"] + 1
-		print(f"draw: {p1[robot]} == {p1[player]}")
+		print(f"draw: {p1[player]} == {p1[robot]}")
 
 	print(f"player: {game_score.get('player')} | robot: {game_score.get('robot')} | draw: {game_score.get('draw')}\n")
 
