@@ -76,12 +76,32 @@ def tekrarlari_sil(liste):
 def kelime_sayisi(liste):
 	return len(liste)
 
+#
+def sozluk_sirala(sozluk):
+	return sorted(sozluk.items(), key = lambda x:x[1], reverse=True)
 
-pride_kelimeleri = kitap_oku('Alice_Adventures')
-print(kelime_sayisi(pride_kelimeleri))
+#
+def en_yuksek_adetli(liste, p1 = 20):
+	kelime_adetleri = {
+		kelime: liste.count(kelime)
+		for kelime in liste
+	}
+	sirali_liste = sozluk_sirala(kelime_adetleri)
+	return dict(sirali_liste[:p1])
 
-pride_kelimeleri = liste_sirala(pride_kelimeleri, True)
+#
+pride_kelimeleri = kitap_oku('Pride_and_Prejudice')
+alice_kelimeleri = kitap_oku('Alice_Adventures')
 
-print(pride_kelimeleri[:20])
-print(tekrarlari_sil(pride_kelimeleri[:20]))
+#
+alice_kelimeleri = alice_kelimeleri[:20]
+alice_kelime_adetleri = en_yuksek_adetli(alice_kelimeleri)
+print(alice_kelime_adetleri)
 
+#
+pride_kelime_adetleri = Counter(pride_kelimeleri)
+print(pride_kelime_adetleri)
+
+#
+pride_kelime_adetleri = Counter(pride_kelimeleri).most_common(20)
+print(pride_kelime_adetleri)
