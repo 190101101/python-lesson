@@ -1,0 +1,9 @@
+file read modes
+
+* r: read
+* w: write
+* a: append
+* x: create
+* t: text type
+* b: binary
+* +: update (read + write)

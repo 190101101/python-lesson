@@ -1,0 +1,12 @@
+file: file, byte arr dir
+
+1 - binary
+	pdf, doc, jpg, png
+
+2 - text
+	txt, xml, html, py, java
+
+encoding:
+
+1 - ascii (128 char)	
+2 - unicode (1.114.122 char)
