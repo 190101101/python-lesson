@@ -1,0 +1,43 @@
+file: file, byte arr dir
+
+1 - binary
+	pdf, doc, jpg, png
+
+2 - text
+	txt, xml, html, py, java
+
+encoding:
+
+1 - ascii (128 char)	
+2 - unicode (1.114.122 char)
+****************************
+
+
+file read modes
+
+* r: read
+* w: write
+* a: append
+* x: create
+* t: text type
+* b: binary
+* +: update (read + write)
+
+#
+read modes
+
+* read
+* readline
+* readlines
+
+#####################
+
+pythonda del ve rename os modulu ile olur
+
+
+#
+1 os.mkdir
+	* mkdir() - tek folder yaradir
+	* makedirs() -> birden cox yaradir
+
+2 path.Path.mkdir() -> hem tek hem cox folder yaradir
