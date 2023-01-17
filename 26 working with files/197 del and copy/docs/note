@@ -1,0 +1,8 @@
+1 - folder silme
+2 - file ve folder copy
+3 - file ve folder dashima
+4 - file ve folder rename
+
+os.rmdir() -> tek folder siler (bosh ise)
+pathlib.Path.rmdir() -> tek folder siler
+shutil.rmtree() -> butun folder sil
