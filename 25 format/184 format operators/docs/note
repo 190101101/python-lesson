@@ -1,0 +1,6 @@
+python 4 cur string format var
+
+1 - % (kohne style)
+2 - str.format (yeni style)
+3 - f-strings (string interpolation)
+4 - template strings
