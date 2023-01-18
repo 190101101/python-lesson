@@ -22,14 +22,50 @@ class Penguen:
 			return f"{self.ad} dans ede bilmir."
 
 
-#
-makaroni = Penguen('makaroni', 8, 'sari siyah')
-print(makaroni.yuzme())
-print(makaroni.sarki_soyle(True))
+class kus:
 
-print('-------')
-#
-neseli_ayaklar = Penguen('neseli_ayaklar', 1, 'gri papyon')
-print(neseli_ayaklar.yuzme())
-print(neseli_ayaklar.sarki_soyle(False))
-print(neseli_ayaklar.dans(True))
+	def __init__(self):
+		print('kus yaratildi')
+
+	def kimimBen(self):
+		print('ben bir kusum')
+
+	def ucma(self):
+		print('kuslar uca bilir')
+
+	def yuzme(self):
+		print('kuslar yuze bilir')
+		
+
+minik_kus = kus()
+minik_kus.kimimBen()
+minik_kus.ucma()
+minik_kus.yuzme()
+
+#minik_kus.gece_gorusu()
+
+print('----')
+
+class baykus(kus):
+
+	def __init__(self):
+		super().__init__()
+		print('baykus yaratildi')
+
+	def kimimBen(self):
+		print('ben bir baykusum')
+
+	def ucma(self):
+		print('baykuslar uca bilir')
+
+	def yuzme(self):
+		print('baykuslar yuze bilmir')
+	
+	def gece_gorusu(self):
+		print('baykuslar gece gore bilir')
+
+kucuk_baykus = baykus()
+kucuk_baykus.kimimBen()
+kucuk_baykus.ucma()
+kucuk_baykus.yuzme()
+kucuk_baykus.gece_gorusu()
