@@ -1,0 +1,40 @@
+"""
+Python'da PDF dosyaları ile çalışacağız bu bölümde.
+
+1- PDF özelliklerini okuma
+2- PDF'ten text (sayfa) okuma
+3- PDF'ten sayfa alma (extract)
+4- PDF'leri birleştirme
+5- PDF'i döndürme
+
+Bu işlemleri yaparken yeni bir Python paketleri kullanacağız:
+* PyPDF2
+    * https://pypi.org/project/PyPDF2/
+* pdfplumber
+    * https://pypi.org/project/pdfplumber/
+
+Bu paketler Python içinde direk olarak gelmiyor.
+Dolayısı ile dışarıdan yüklememiz lazım.
+
+Python paketleri dünyada merkezi yerlerde open-source olarak depolanır.
+Herkes paketleri buradan yükler.
+
+Python'da paket yüklemek için: pip
+'pip' Python'un paket yöneticisidir.
+Yani Python içine paketleri yüklemenizi veya kaldırmanızı sağlar.
+Python içinde pip, direk olarak 'pypi.org' sitesine bağlıdır.
+"The Python Package Index (PyPI) is a repository of software for the
+Python programming language."
+https://pypi.org/
+
+https://packaging.python.org/tutorials/installing-packages/
+Command Prompt -> cmd
+pip --version
+pip install PyPDF2
+"""
+
+"""
+Kullanacağımız pdf direk Python'un yaratıcısı Guido van Rossum, tarafından hazırlanmış
+* Python Tutorial (release 3.9.1) January 12, 2021 
+:)
+"""

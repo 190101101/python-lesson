@@ -1,9 +1,6 @@
 import csv
 
-file_yolu = '../../../00 bin/docs/data/movie.csv'
-file_yolu_noktali_virgul = '../../../00 bin/docs/data/movie_dotted.csv'
-
-def csv_oku():
+def csv_oku(file_yolu):
 
 	with open(file_yolu, 'r') as dosya:
 		filmler = csv.reader(dosya, delimiter=',')
@@ -11,7 +8,7 @@ def csv_oku():
 		for film in filmler:
 			print(film)
 
-def csv_oku_noktali_virgul():
+def csv_oku_noktali_virgul(file_yolu_noktali_virgul):
 
 	with open(file_yolu_noktali_virgul, 'r') as dosya:
 		filmler = csv.reader(dosya, delimiter=';')
@@ -29,3 +26,12 @@ def csv_oku_dilect():
 
 		for film in filmler:
 			print(film)
+
+
+def csv_sniffer(file_yolu):
+	with open(file_yolu, 'r') as dosya:
+		icerik = dosya.read()
+		has_reader = csv.Sniffer().has_header(icerik)
+		print(has_reader)
+		dialect = csv.Sniffer().sniff(icerik)
+		print('ayirac: ', dialect.delimiter)
