@@ -1,0 +1,18 @@
+attribute lara '.' ile erishilir
+
+* __init__(self, ...):
+bir clastan nesne yaratilirken ilk cagrilan yaratici (yapisi, constructor) metoduru.
+
+__init__() instance olushturur
+
+
+* self: o anda yaratilmakta olan nesneyi anlatir.
+nesnenin ozellikleri:
+self.ad = ...
+self.yas = ...
+self.renk = ...
+
+methodlar (davranishlar):
+
+method bir class icinde tanimlanmish fonksiyondur. nesnelerin davranishlarini anlatir.
+
