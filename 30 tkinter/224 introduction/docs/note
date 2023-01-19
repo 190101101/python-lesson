@@ -1,0 +1,3 @@
+pack () -> widgetleri ard arda siralar (main window) yerleshdirilmesi
+gird () -> satir sutun uzerinden yerleshdirir
+place () -> istediyiniz noktaya tam olarak yereshdirir (x=100, y=300) text unit
